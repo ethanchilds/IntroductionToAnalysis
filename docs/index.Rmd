@@ -21,7 +21,7 @@ Bounded above, bounded below, infimum, and supremum as defined in the "Sets" sec
 
 **Definition:** Every non-empty subset of $\mathbb{N}$ has a smallest element.
 
-Note that this is not an axiom of the reals, but an axiom of the naturals. None the less it helps understand the nature of the reals.
+Note that this is not an axiom of the reals, but an axiom of the naturals. None the less it is very important.
 
 #### Helpful Links
 
