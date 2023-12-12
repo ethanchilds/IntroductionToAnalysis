@@ -236,7 +236,7 @@ F & F & T & T & T & T\\
 \end{array}
 $$
 
-Looking at this truth table we can quickly recognize that the conditional is logically equivalent to the contrapositive and the converse is logically equivalent to the inverse. This not particularly powerful on its own, but when we begin proving statements that follow the structure of $P \rightarrow Q$ we can instead prove the contrapositive if it is easier.
+Looking at this truth table we can quickly recognize that the base conditional is logically equivalent to the contrapositive and the converse is logically equivalent to the inverse. This not particularly powerful on its own, but when we begin proving statements that follow the structure of $P \rightarrow Q$ we can instead prove the contrapositive if it is easier.
 
 #### Helpful Links
 
