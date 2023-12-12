@@ -1,12 +1,12 @@
 ---
-title: ""
+title: "Intro to Analysis Key Concepts"
 output: 
   html_document:
     theme: cerulean
     code_folding: hide
 ---
 
-## Intro to Analysis Key Concepts {.tabset}
+## by Ethan Childs {.tabset}
 
 ### Axioms of the Real Numbers
 
