@@ -1117,7 +1117,15 @@ is injective we can still use the old notation, but we cannot
 automatically assume any function is injective.</p>
 <p>There is many proofs that can make use of inverse functions, most are
 concerned with proving the nature of the function. These can be function
-of sets proofs, compostion proofs, and more. Below is an example</p>
+of sets proofs, composition proofs, and more. Below is an example of a
+composition of inverse functions set proof. Remember any set proofs
+require proof of equivalence from both sides.</p>
+<ul>
+<li>Given function <span class="math inline">\(f:X -&gt; Y\)</span> and
+<span class="math inline">\(B \subset Y\)</span>, prove <span class="math inline">\(f(f^{-1}(B)) \subseteq B\)</span>.</li>
+</ul>
+<p><span class="math inline">\(\forall y \in f(f^{-1}(B))\)</span>,
+<span class="math inline">\(\exists x\)</span> such that <span class="math inline">\(y = f(x)\)</span>. It follows that <span class="math inline">\(\forall x \in f^{-1}(B)\)</span>, <span class="math inline">\(\exists y \in B\)</span> such that <span class="math inline">\(x \in f^{-1}(y)\)</span>. Thus <span class="math inline">\(f(f^{-1}(B)) \subseteq B\)</span>. <span class="math inline">\(\forall y \in B\)</span>, <span class="math inline">\(\exists x\)</span> such that <span class="math inline">\(x \in f^{-1}(y)\)</span>. It follows that <span class="math inline">\(\forall x \exists y\)</span> such that <span class="math inline">\(y = f(x)\)</span>. Thus <span class="math inline">\(B \subseteq f(f^{-1}(B))\)</span>. Therefore <span class="math inline">\(f(f^{-1}(B)) \subseteq B\)</span>.</p>
 <p><strong>Sequence Convergence/Divergence:</strong></p>
 <p>Sequences are incredibly important for many reasons, one being the
 fact that we can use them to observe behaviors of these functions, such
