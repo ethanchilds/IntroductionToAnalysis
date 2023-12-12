@@ -1,0 +1,46 @@
+---
+title: ""
+output: 
+  html_document:
+    theme: cerulean
+    code_folding: hide
+---
+
+## Intro to Analysis Key Concepts {.tabset}
+
+### Axioms of the Real Numbers
+
+#### Completeness Axiom for the Real Numbers
+
+**Definition:** Every non-empty subset A of $\mathbb{R}$ that is bounded above has a least upper bound. That is, $\exists x \in \mathbb{R}$ such that $\forall y \in A$ $x \geq y$. Similarly very non-empty subset A of $\mathbb{R}$ that is bounded below has a greatest lower bound. That is, $\exists x \in \mathbb{R}$ such that $\forall y \in A$ $x \leq y$. Thus every every non empty and bounded set has a supremum and infimum and is a real number.
+
+Bounded above, bounded below, infimum, and supremum as defined in the "Sets" section of this documentation.
+
+
+#### Well Ordering Principle
+
+**Definition:** Every non-empty subset of $\mathbb{N}$ has a smallest element.
+
+Note that this is not an axiom of the reals, but an axiom of the naturals. None the less it helps understand the nature of the reals.
+
+#### Helpful Links
+
+* [Completeness Axiom Youtube](https://users.math.msu.edu/users/tsendova/MTH299_F13/Lecture_33%20for%20student.pdf)
+* [Completeness Axiom Youtube](https://youtu.be/pR_HD2WaN_k?si=HmiF_GcI_XhpXUe4)
+* [Well Ordering Principle](https://math.libretexts.org/Courses/Monroe_Community_College/MTH_220_Discrete_Math/3%3A_Proof_Techniques/3.7%3A_The_Well-Ordering_Principle)
+
+
+### Archimedean Principle
+
+**Definition:** The set of of positive integers, $\mathbb{N} = {1,2,3,...}$ is not bounded above. That is, $\forall n \in \mathbb{N}$ $\exists n+1$ such that $n \leq n+1$
+
+**Example:** Say we have a distance of 1 yard that we would like to travel and we can move at any lengths we choose. We decide that for every step we take, we will cross exactly half of the possible distance. Thus, we will take steps of $\frac{1}{2}$ of a yard, $\frac{1}{4}$ of a yard, $\frac{1}{8}$ of a yard, and so on.Going on like this we could never reach the maximum distance of one yard. This is just one example of the natural numbers being unbounded and thus an example of the archimedean property.
+
+**Common Use:**
+
+When proving and showing arbitrarily close distances, $\frac{1}{n}$ comes up frequently as it allows us to makes statements such as:
+
+* For the set A = {x|$3 \leq x < 5 $}, by the Archimedean principle, $\forall x \in A$ $\exists y = x+\frac{1}{n}$ such that $x < y < 5$, and thus there is no maximum value in set A.
+
+#### Helpful Links
+* [Archimedean Principle Youtube](https://youtu.be/sG1FHUPdmxk?si=n4bJcrBfz0Jq-UEY)
