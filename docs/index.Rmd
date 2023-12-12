@@ -110,4 +110,136 @@ A limit point of set $A$ can be defined as point $P$ where all sets that contain
 * [Boston University Set Theory](https://www.bu.edu/linguistics/UG/course/lx502/_docs/lx502-basic%20set%20theory.pdf)
 * [Intro to Set Theory Youtube](https://www.youtube.com/watch?v=tyDKR4FG3Yw&pp=ygUTaW50cm8gdG8gc2V0IHRoZW9yeQ%3D%3D)
 * [Supremum and Infimum Youtube](https://youtu.be/8Cyvdv7Sm2s?si=h51lB_6q3CCrjF9k)
+
+### Formal Logic
+
+When dealing with formal logic, we are concerned with the truth of statements. For example, "it rained today." This is a statement and we can represent this statement as variable $P$. This statement's truth value changes depending on the day, on days it has rained $P = True$, on days that it has not rained $P = False$. This is the basis for the fundamentals of formal logic.
+
+#### Notation
+
+With more notation, we can expand upon this basis of formal logic. With these notations we can interact with multiple statements and really see the strength of formal logic.
+
+**Binary Logical Connectives:**
+
+For the statements $P=True$ and $Q=False$ consider the following table. (We will also show the negation statement here even though it is not a logical connective)
+
+$$
+\begin{array}{|r|r|c|}
+\hline
+Symbol & Explanation & Example\\
+\hline
+P \land Q & \text{Conjuction, P AND Q, both must be true}&P \land Q=False\\
+P \lor Q&\text{Disjunction, P OR Q, only one must be true}&P \lor Q = True\\
+P \rightarrow Q &\text{Conditional, P THEN Q, will cover more later}&P\rightarrow Q=False \\
+P\leftrightarrow Q&\text{Biconditional, P ONLY IF Q, True if P=Q}&P\leftrightarrow Q = False\\
+\neg P&\text{Negation, NOT P, opposite of the original truth value}&\neg P = False \\
+\hline
+\end{array}
+$$
+**Predicates & Quantifiers:** 
+
+With formal logic we often find ourselves concerned with how a statement aligns with a set. For example, we have statement P, defined as P = "x < 5". We have set A = {x | 3 < x < 7}. We want to know the truth value of P in relation to elements of set A. P(x) is an example of a "predicate", this denotes the statement P on any given x, so when asking about P in relation to elements of A which are given by x, we can say P(x). The following table explains quantifiers. These allow us to expand upon the idea of a predicate. All examples will be in relation to the previously defined example
+
+$$
+\begin{array}{|r|r|c|}
+\hline
+Symbol & Explanation & Example\\
+\hline
+\forall x &\text{FOR ALL x}& \forall x \in A, P(x) = False\\
+\exists x &\text{THERE EXISTS an x} & \exists x \in A, P(x)=True\\
+\hline
+\end{array}
+$$
+
+In the table above, the for all quantifier returns false for the given predicate because within A, we can find elements that are not less than 5, such as 6. the exists quantifier returns true for this given predicate because with A, we can find at least one element that is less than 5, such as 4.
+
+#### Truth Tables
+
+One application of formal logic is truth tables. These tables take some complex statement and for every possible truth value of the simple values, computes the truth value of the complex statement. This is helpful in recognizing that something called "logical equivalence" which we will go into later. The following truth table gives all possible truth values for statement $P \rightarrow Q$ in order to better understand the conditional connective. "True" will be identified with a "T" and "False" will be identified with an "F."
+
+$$
+\begin{array}{|r|r|c|}
+\hline
+P & Q & P \rightarrow Q\\
+\hline
+T & T & T \\
+T & F & F \\
+F & T & T \\
+F & F & T \\
+\hline
+\end{array}
+$$
+
+As can be seen in the above table, the conditional statement is only interested in when the first statement is true. The conditionals says "When P is some truth value then Q is some truth value", so when P is false, this statement has no effect on Q and thus the statement P then Q is always true. The only instance of P then Q being false is when P is true then Q is false because it is now saying that because something true has occurred, then something false happens, which is logically incorrect.
+
+Another example of a truth table can be seen below.
+
+$$
+\begin{array}{|r|r|c|}
+\hline
+P & Q & P \land Q\\
+\hline
+T & T & T \\
+T & F & F \\
+F & T & F \\
+F & F & F \\
+\hline
+\end{array}
+$$
+
+#### Logical Equivalence
+
+Logical equivalence can be seen by expanding the truth tables to display the truth values of multiple complex statements. By expanding these tables we can determine if two complex statements have the same truth value for every possible truth value of the simple statements that they are comprised of. When the complex statements show themselves to result in the same truth values we call these statements "logically equivalent." Below is a famous example of this called "de Morgan's Law".
+
+$$
+\begin{array}{|r|r|c|c|}
+\hline
+P & Q & \neg (P \land Q) & \neg P \lor \neg Q\\
+\hline
+T & T & F & F\\
+T & F & T & T\\
+F & T & T & T\\
+F & F & T & T\\
+\hline
+\end{array}
+$$
+
+As can be seen in the table the statements $\neg (P \land Q)$ and $\neg P \lor \neg Q$ both result in the exact same truth values for every truth value of P and Q, thus making them logically equivalence.
+
+One important concept of logical equivalence is inverse, converse, and contrapostive of conditional statements. The definitions of these cane be seen in the table below.
+
+$$
+\begin{array}{|r|r|c|}
+\hline
+Name& Statement & Explanation \\
+\hline
+Conditional & P \rightarrow Q & \text{P then Q} \\
+Converse & Q \rightarrow P & \text{Q then P} \\
+Inverse &  \neg P \rightarrow \neg Q & \text{If not P then not Q}\\
+Contrapositive &  \neg Q \rightarrow \neg P & \text{If not Q then not P}\\
+\hline
+\end{array}
+$$
+
+These definitions are good to know, however, what is really amazing about them is their resulting truth table. This table can be seen below.
+
+$$
+\begin{array}{|r|r|}
+\hline
+P& Q & P \rightarrow Q & Q \rightarrow P & \neg P \rightarrow \neg Q & \neg Q \rightarrow \neg P\\
+\hline
+T & T &  T & T & T & T\\
+T & F &  F & T & T & F\\
+F & T & T & F & F & T\\
+F & F & T & T & T & T\\
+\hline
+\end{array}
+$$
+
+Looking at this truth table we can quickly recognize that the conditional is logically equivalent to the contrapositive and the converse is logically equivalent to the inverse. This not particularly powerful on its own, but when we begin proving statements that follow the structure of $P \rightarrow Q$ we can instead prove the contrapositive if it is easier.
+
+#### Helpful Links
+
+* [Conditional Statements and Logical Equivalence Youtube](https://www.youtube.com/watch?v=jLB5nCORLIg)
+* [Intro to Formal Logic Youtube](https://youtu.be/q2eyZZK-OIk?si=_Z51UIXf2Rwk2zx5)
 * [Limit Points Youtube](https://youtu.be/RmsvftFNMtE?si=9donGOO5LxEVXooa)

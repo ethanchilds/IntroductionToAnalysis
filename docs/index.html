@@ -638,6 +638,188 @@ University Set Theory</a></li>
 to Set Theory Youtube</a></li>
 <li><a href="https://youtu.be/8Cyvdv7Sm2s?si=h51lB_6q3CCrjF9k">Supremum
 and Infimum Youtube</a></li>
+</ul>
+</div>
+</div>
+<div id="formal-logic" class="section level3">
+<h3>Formal Logic</h3>
+<p>When dealing with formal logic, we are concerned with the truth of
+statements. For example, “it rained today.” This is a statement and we
+can represent this statement as variable <span class="math inline">\(P\)</span>. This statement’s truth value changes
+depending on the day, on days it has rained <span class="math inline">\(P = True\)</span>, on days that it has not rained
+<span class="math inline">\(P = False\)</span>. This is the basis for
+the fundamentals of formal logic.</p>
+<div id="notation-1" class="section level4">
+<h4>Notation</h4>
+<p>With more notation, we can expand upon this basis of formal logic.
+With these notations we can interact with multiple statements and really
+see the strength of formal logic.</p>
+<p><strong>Binary Logical Connectives:</strong></p>
+<p>For the statements <span class="math inline">\(P=True\)</span> and
+<span class="math inline">\(Q=False\)</span> consider the following
+table. (We will also show the negation statement here even though it is
+not a logical connective)</p>
+<p><span class="math display">\[
+\begin{array}{|r|r|c|}
+\hline
+Symbol &amp; Explanation &amp; Example\\
+\hline
+P \land Q &amp; \text{Conjuction, P AND Q, both must be true}&amp;P
+\land Q=False\\
+P \lor Q&amp;\text{Disjunction, P OR Q, only one must be true}&amp;P
+\lor Q = True\\
+P \rightarrow Q &amp;\text{Conditional, P THEN Q, will cover more
+later}&amp;P\rightarrow Q=False \\
+P\leftrightarrow Q&amp;\text{Biconditional, P ONLY IF Q, True if
+P=Q}&amp;P\leftrightarrow Q = False\\
+\neg P&amp;\text{Negation, NOT P, opposite of the original truth
+value}&amp;\neg P = False \\
+\hline
+\end{array}
+\]</span> <strong>Predicates &amp; Quantifiers:</strong></p>
+<p>With formal logic we often find ourselves concerned with how a
+statement aligns with a set. For example, we have statement P, defined
+as P = “x &lt; 5”. We have set A = {x | 3 &lt; x &lt; 7}. We want to
+know the truth value of P in relation to elements of set A. P(x) is an
+example of a “predicate”, this denotes the statement P on any given x,
+so when asking about P in relation to elements of A which are given by
+x, we can say P(x). The following table explains quantifiers. These
+allow us to expand upon the idea of a predicate. All examples will be in
+relation to the previously defined example</p>
+<p><span class="math display">\[
+\begin{array}{|r|r|c|}
+\hline
+Symbol &amp; Explanation &amp; Example\\
+\hline
+\forall x &amp;\text{FOR ALL x}&amp; \forall x \in A, P(x) = False\\
+\exists x &amp;\text{THERE EXISTS an x} &amp; \exists x \in A,
+P(x)=True\\
+\hline
+\end{array}
+\]</span></p>
+<p>In the table above, the for all quantifier returns false for the
+given predicate because within A, we can find elements that are not less
+than 5, such as 6. the exists quantifier returns true for this given
+predicate because with A, we can find at least one element that is less
+than 5, such as 4.</p>
+</div>
+<div id="truth-tables" class="section level4">
+<h4>Truth Tables</h4>
+<p>One application of formal logic is truth tables. These tables take
+some complex statement and for every possible truth value of the simple
+values, computes the truth value of the complex statement. This is
+helpful in recognizing that something called “logical equivalence” which
+we will go into later. The following truth table gives all possible
+truth values for statement <span class="math inline">\(P \rightarrow
+Q\)</span> in order to better understand the conditional connective.
+“True” will be identified with a “T” and “False” will be identified with
+an “F.”</p>
+<p><span class="math display">\[
+\begin{array}{|r|r|c|}
+\hline
+P &amp; Q &amp; P \rightarrow Q\\
+\hline
+T &amp; T &amp; T \\
+T &amp; F &amp; F \\
+F &amp; T &amp; T \\
+F &amp; F &amp; T \\
+\hline
+\end{array}
+\]</span></p>
+<p>As can be seen in the above table, the conditional statement is only
+interested in when the first statement is true. The conditionals says
+“When P is some truth value then Q is some truth value”, so when P is
+false, this statement has no effect on Q and thus the statement P then Q
+is always true. The only instance of P then Q being false is when P is
+true then Q is false because it is now saying that because something
+true has occurred, then something false happens, which is logically
+incorrect.</p>
+<p>Another example of a truth table can be seen below.</p>
+<p><span class="math display">\[
+\begin{array}{|r|r|c|}
+\hline
+P &amp; Q &amp; P \land Q\\
+\hline
+T &amp; T &amp; T \\
+T &amp; F &amp; F \\
+F &amp; T &amp; F \\
+F &amp; F &amp; F \\
+\hline
+\end{array}
+\]</span></p>
+</div>
+<div id="logical-equivalence" class="section level4">
+<h4>Logical Equivalence</h4>
+<p>Logical equivalence can be seen by expanding the truth tables to
+display the truth values of multiple complex statements. By expanding
+these tables we can determine if two complex statements have the same
+truth value for every possible truth value of the simple statements that
+they are comprised of. When the complex statements show themselves to
+result in the same truth values we call these statements “logically
+equivalent.” Below is a famous example of this called “de Morgan’s
+Law”.</p>
+<p><span class="math display">\[
+\begin{array}{|r|r|c|c|}
+\hline
+P &amp; Q &amp; \neg (P \land Q) &amp; \neg P \lor \neg Q\\
+\hline
+T &amp; T &amp; F &amp; F\\
+T &amp; F &amp; T &amp; T\\
+F &amp; T &amp; T &amp; T\\
+F &amp; F &amp; T &amp; T\\
+\hline
+\end{array}
+\]</span></p>
+<p>As can be seen in the table the statements <span class="math inline">\(\neg (P \land Q)\)</span> and <span class="math inline">\(\neg P \lor \neg Q\)</span> both result in the
+exact same truth values for every truth value of P and Q, thus making
+them logically equivalence.</p>
+<p>One important concept of logical equivalence is inverse, converse,
+and contrapostive of conditional statements. The definitions of these
+cane be seen in the table below.</p>
+<p><span class="math display">\[
+\begin{array}{|r|r|c|}
+\hline
+Name&amp; Statement &amp; Explanation \\
+\hline
+Conditional &amp; P \rightarrow Q &amp; \text{P then Q} \\
+Converse &amp; Q \rightarrow P &amp; \text{Q then P} \\
+Inverse &amp;  \neg P \rightarrow \neg Q &amp; \text{If not P then not
+Q}\\
+Contrapositive &amp;  \neg Q \rightarrow \neg P &amp; \text{If not Q
+then not P}\\
+\hline
+\end{array}
+\]</span></p>
+<p>These definitions are good to know, however, what is really amazing
+about them is their resulting truth table. This table can be seen
+below.</p>
+<p><span class="math display">\[
+\begin{array}{|r|r|}
+\hline
+P&amp; Q &amp; P \rightarrow Q &amp; Q \rightarrow P &amp; \neg P
+\rightarrow \neg Q &amp; \neg Q \rightarrow \neg P\\
+\hline
+T &amp; T &amp;  T &amp; T &amp; T &amp; T\\
+T &amp; F &amp;  F &amp; T &amp; T &amp; F\\
+F &amp; T &amp; T &amp; F &amp; F &amp; T\\
+F &amp; F &amp; T &amp; T &amp; T &amp; T\\
+\hline
+\end{array}
+\]</span></p>
+<p>Looking at this truth table we can quickly recognize that the
+conditional is logically equivalent to the contrapositive and the
+converse is logically equivalent to the inverse. This not particularly
+powerful on its own, but when we begin proving statements that follow
+the structure of <span class="math inline">\(P \rightarrow Q\)</span> we
+can instead prove the contrapositive if it is easier.</p>
+</div>
+<div id="helpful-links-3" class="section level4">
+<h4>Helpful Links</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=jLB5nCORLIg">Conditional
+Statements and Logical Equivalence Youtube</a></li>
+<li><a href="https://youtu.be/q2eyZZK-OIk?si=_Z51UIXf2Rwk2zx5">Intro to
+Formal Logic Youtube</a></li>
 <li><a href="https://youtu.be/RmsvftFNMtE?si=9donGOO5LxEVXooa">Limit
 Points Youtube</a></li>
 </ul>
