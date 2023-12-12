@@ -110,6 +110,7 @@ A limit point of set $A$ can be defined as point $P$ where all sets that contain
 * [Boston University Set Theory](https://www.bu.edu/linguistics/UG/course/lx502/_docs/lx502-basic%20set%20theory.pdf)
 * [Intro to Set Theory Youtube](https://www.youtube.com/watch?v=tyDKR4FG3Yw&pp=ygUTaW50cm8gdG8gc2V0IHRoZW9yeQ%3D%3D)
 * [Supremum and Infimum Youtube](https://youtu.be/8Cyvdv7Sm2s?si=h51lB_6q3CCrjF9k)
+* [Limit Point Youtube](https://youtu.be/YY8Y5uAka10?si=RtMDt4aGD1KOGKsf)
 
 ### Formal Logic
 
