@@ -44,3 +44,70 @@ When proving and showing arbitrarily close distances, $\frac{1}{n}$ comes up fre
 
 #### Helpful Links
 * [Archimedean Principle Youtube](https://youtu.be/sG1FHUPdmxk?si=n4bJcrBfz0Jq-UEY)
+
+### Sets
+
+#### Notation
+
+When speaking of sets we are talking about some group of numbers where no number is repeated. We represent a set with {}, for example, set A = {1,2,3}. The brackets identify the group of numbers not being different from the group of numbers when reordered, such that B = {2,1,3}, and A = B. This is simply a property of the set, not a property of the numbers, so this does not mean in set B, 2 < 1.
+
+Some common sets of numbers are:
+
+* The natural numbers, otherwise denoted as $\mathbb{N}$. These numbers are all positive whole numbers or 1,2,3,...
+* The integers, otherwise denoted as $\mathbb{Z}$. These numbers are all whole numbers or ...,-2,-1,0,1,2,... 
+* The rationals numbers, otherwise denoted as $\mathbb{Q}$. These numbers are all numbers that can be represented as $\frac{p}{q}$ where $q \neq 0$.
+* The real numbers, otherwise denoted as $\mathbb{R}$. These numbers are composed of all of the previously mentioned sets.
+* The empty, or null, set, otherwise denoted as $\emptyset$. This set contains no elements.
+
+We can construct different sets with some of the following notation:
+
+* Set builder notation, which can be defined as A = {x|condition of x}. For example, A = {x | $3 \leq x < 5 $} which is all numbers between 3 and 5 or A = {2x | $3 \leq x < 5 $} which is the same as the last but all numbers are multiplied by a factor of two.
+* $A \subset \mathbb{R}$ which is a  non-definitive way of saying that A is some proper subset (does not contain all elements from the initial set) of the real numbers. There is also the symbol $\subseteq$ which indicates a non-proper subset, meaning the subset could potentially have all of the same elements as the initial set.
+
+
+#### Common Set Definitions
+
+
+**Union:** The union of two sets, otherwise denoted as $A \cup B$ for sets A and B, is a set that contains all elements from both sets. Referring to the venn diagram below, the union of A and B would be all elements that fit into the A and B circles and only those circles.
+
+```{r}
+knitr::include_graphics("../photos/union.png")
+```
+
+Not only can we denote the union between two sets, we can also denote the union of any sets. For example, $A \cup B \cup C$ would be the union of three sets, including elements from all of them. If A = {1,2,3}, B = {4,5,6}, and C = {7,8,9}, then $A \cup B \cup C$ = {1,2,3,4,5,6,7,8,9}
+
+**Intersection:** The intersection of sets, otherwise denoted by $A \cap B$ for sets A and B, is a set the contains only elements that are shared between sets. Once again referring to a venn diagram, as can be seen below, the intersection of A and B would be all elements that fit into both A and B circles and just those elements.
+
+```{r}
+knitr::include_graphics("../photos/intersection.jpg")
+```
+
+For example, if we were to define sets A = {1,2,3}, B = {2,3,4}, and C = {3,4,5}, then the following would be defined as:
+
+* $A \cap B \cap C$ = {3}
+* $A \cap B$ = {2,3}
+* $B \cap C$ = {3,4}
+* $A \cap C$ = {3}
+
+**Complement:** The complement of set A, denoted as $A'$ or $\bar{A}$, is the set of all elements in the universal set and in A. When dealing with complements it is important to understand that the universal set in question is situational, the basic idea is that complement is every element in the situation that is not a part of A. The venn diagram displays this by highlighting all elements of the complement of the white circle in blue. For example, for $A \subset \mathbb{R}$ where $\forall x \in A$ $x < 5$, $\bar{A}$ is all elements of the reals where x is greater than or equal to 5.
+
+```{r}
+knitr::include_graphics("../photos/complement.jpg")
+```
+
+**Supremums and Infimums**
+
+Set A = {$x \in \mathbb{R} $| $3 \leq x < 5$}. For all elements of A, $3 \leq x$, and as 3 is the smallest element in this set, we would call this value a minimum of the set. The minimum denotes the smallest element a set can take. 3 is what we define as the greatest lower bound of the set. We can define a lower bound as any value such that all values in set A are greater than or equal to the value. For example, -51 counts as a lower bound of A. While there is an infinite number of lower bounds possible, only one is critical and that is the greatest lower bound. The greatest can be defined as the largest lower bound possible, meaning all lower bounds are less than this value and all values in A are greater than it. This value is also denoted as the infimum of the set.
+
+For set A defined above, 5 is not a maximum of A. While 3 can be  defined as a minimum because it is in A, 5 is simply bounding A, thus meaning that by the archimedean principle there is an infinite amount of numbers less than 5 but in A, so there is no x such that x is greater than or equal to all values in a. 5 is what we call the least upper bound. We can define an upper bound as any value in which all elements of set A are less than the value. For example, 117 is an upper bound of the set A. While there is an infinite amount of upper bounds, only one is critical and that is the least upper bound. The least upper bound can be defined as the smallest upper bound possible, meaning all upper bounds are greater than it and all values in the set are less than or equal to it. This value can also be denoted as the supremum of the set.
+
+**Limit Point:** 
+
+A limit point of set $A$ can be defined as point $P$ where all sets that contain $P$ also contain some other point $L$ which is also in A. For example, in the set A = {$x \in \mathbb{R} $| $3 \leq x < 5$}, 4.9 is a limit point of A because no matter what set bounds that are put around it, by the archimedean principle, there will always be some other number that is arbitrarily close to 4.9 such that any set that contains 4.9 will also have to contain some other point $L$ such that L is in set A.
+
+#### Helpful Links
+
+* [Boston University Set Theory](https://www.bu.edu/linguistics/UG/course/lx502/_docs/lx502-basic%20set%20theory.pdf)
+* [Intro to Set Theory Youtube](https://www.youtube.com/watch?v=tyDKR4FG3Yw&pp=ygUTaW50cm8gdG8gc2V0IHRoZW9yeQ%3D%3D)
+* [Supremum and Infimum Youtube](https://youtu.be/8Cyvdv7Sm2s?si=h51lB_6q3CCrjF9k)
+* [Limit Points Youtube](https://youtu.be/RmsvftFNMtE?si=9donGOO5LxEVXooa)
