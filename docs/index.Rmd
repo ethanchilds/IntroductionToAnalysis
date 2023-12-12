@@ -370,7 +370,9 @@ Given that $f: A \rightarrow B$, $g: B \rightarrow C$ are injective, $\forall x 
 
 Given that $f: A \rightarrow B$, $g: B \rightarrow C$ are surjective, then $\forall z \in C$ $\exists y \in B$ such that $g(y) = z$ and $\forall y \in B$ $\exists x \in A$ such that $f(x) = y$. It follows that $\forall z$  $\exists f(x)$ such that $g(f(x)) = z$, therefore if $f$ and $g$ are surjective, then $(g \circ f)$ is surjective.
 
-Another proof of interest to us when dealing with functions is proofs regarding the inverse, particularly the composition of a function and its inverse.
+Another proof of interest to us when dealing with functions is proofs regarding the inverse, particularly the composition of a function and its inverse. An inverse of a function $f(x)$ can be thought of best as an "undo" of everything $f(x)$ did to the domain. The inverse is denoted as $f^{-1}(y)$ and takes the range of $f$ as it's domain and the domain of $f$ as it's range. Something interesting about $f^{-1}$ is that it does not have to be well defined because the original function can possibly map multiple elements onto the same element. In situations where there is a $y$ such that $f^{-1}(y)$ results in set of $x$, we simply say that $f^{-1}(y) $ = {x}. As a result of this, we can no longer makes statements such as $y=f(x)$, instead we must state $x \in f^{-1}(y)$, however, if a function is injective we can still use the old notation, but we cannot automatically assume any function is injective.
+
+There is many proofs that can make use of inverse functions, most are concerned with proving the nature of the function. These can be function of sets proofs, compostion proofs, and more. Below is an example 
 
 **Sequence Convergence/Divergence:**
 

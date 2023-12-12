@@ -1102,7 +1102,19 @@ surjectivity of function. An example of these proofs follow as:</p>
 then <span class="math inline">\(\forall z \in C\)</span> <span class="math inline">\(\exists y \in B\)</span> such that <span class="math inline">\(g(y) = z\)</span> and <span class="math inline">\(\forall y \in B\)</span> <span class="math inline">\(\exists x \in A\)</span> such that <span class="math inline">\(f(x) = y\)</span>. It follows that <span class="math inline">\(\forall z\)</span> <span class="math inline">\(\exists f(x)\)</span> such that <span class="math inline">\(g(f(x)) = z\)</span>, therefore if <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> are surjective, then <span class="math inline">\((g \circ f)\)</span> is surjective.</p>
 <p>Another proof of interest to us when dealing with functions is proofs
 regarding the inverse, particularly the composition of a function and
-its inverse.</p>
+its inverse. An inverse of a function <span class="math inline">\(f(x)\)</span> can be thought of best as an “undo”
+of everything <span class="math inline">\(f(x)\)</span> did to the
+domain. The inverse is denoted as <span class="math inline">\(f^{-1}(y)\)</span> and takes the range of <span class="math inline">\(f\)</span> as it’s domain and the domain of <span class="math inline">\(f\)</span> as it’s range. Something interesting
+about <span class="math inline">\(f^{-1}\)</span> is that it does not
+have to be well defined because the original function can possibly map
+multiple elements onto the same element. In situations where there is a
+<span class="math inline">\(y\)</span> such that <span class="math inline">\(f^{-1}(y)\)</span> results in set of <span class="math inline">\(x\)</span>, we simply say that $f^{-1}(y) $ = {x}.
+As a result of this, we can no longer makes statements such as <span class="math inline">\(y=f(x)\)</span>, instead we must state <span class="math inline">\(x \in f^{-1}(y)\)</span>, however, if a function
+is injective we can still use the old notation, but we cannot
+automatically assume any function is injective.</p>
+<p>There is many proofs that can make use of inverse functions, most are
+concerned with proving the nature of the function. These can be function
+of sets proofs, compostion proofs, and more. Below is an example</p>
 <p><strong>Sequence Convergence/Divergence:</strong></p>
 <p>Sequences are incredibly important for many reasons, one being the
 fact that we can use them to observe behaviors of these functions, such
